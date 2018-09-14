@@ -3,7 +3,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="D:/JavaDoc/quartz-2.1.7/quartz-2.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/JavaDoc/quartz-2.1.7/quartz-2.1.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/JavaDoc/quartz-2.1.7/docs/api/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="D:/JavaDoc/quartz-2.1.7/lib/c3p0-0.9.1.1.jar"/>
 	<classpathentry kind="lib" path="D:/JavaDoc/quartz-2.1.7/lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="D:/JavaDoc/quartz-2.1.7/lib/slf4j-api-1.6.1.jar"/>
