@@ -15,12 +15,14 @@ public class mainClass {
 			// Define Job detail
 			JobDetail firstJobDetail = JobBuilder.newJob(PrintOutJob.class)
 										.withIdentity("first job", "group 1")
+										.usingJobData("JobDetailKey", "This is how you job detail transfer info")
 										.build();
 			// Define trigger
 			Trigger firstTrigger = TriggerBuilder.newTrigger()
 									.withIdentity("first trigger", "group 12")
+									.usingJobData("TriggerKey", "This is also the way trigger transfer info")
 									.withSchedule(SimpleScheduleBuilder.simpleSchedule()
-																		.withIntervalInSeconds(3)
+																		.withIntervalInSeconds(9)
 																		.repeatForever())
 									.build();
 			
